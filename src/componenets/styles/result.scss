@@ -1,0 +1,60 @@
+.wrapper {
+  display: flex;
+  height: 100vh;
+
+  #image {
+    flex: 1;
+    background: linear-gradient(
+      to right,
+      rgb(253, 183, 102),
+      rgb(255, 235, 213)
+    );
+  }
+  .details {
+    flex: 2;
+    background: rgb(247, 230, 205);
+    flex-wrap: wrap;
+
+    div:first-child {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        text-align: center;
+        font-size: 7vmin;
+        font-weight: 300;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: rgb(252, 169, 92);
+      }
+
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        border: 1px solid rgb(255, 153, 0);
+      }
+    }
+
+    .ability {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgb(255, 153, 0);
+
+      h4 {
+        text-align: center;
+        font-size: 4vmin;
+        font-weight: 200;
+      }
+
+      div {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border: 1px solid rgb(255, 153, 0);
+        p {
+          font-size: 1.2em;
+        }
+      }
+    }
+  }
+}

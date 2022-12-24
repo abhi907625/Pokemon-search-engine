@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  form {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  form > div {
+    display: flex;
+    width: 50vmax;
+    height: 7vmin;
+    margin: 10px;
+
+    input {
+      flex: 5;
+      padding: 5px;
+      font-size: 3vmin;
+      font-family: "Courier New", Courier, monospace;
+      outline: none;
+      border: 1px solid rgb(236, 185, 90);
+    }
+
+    button {
+      flex: 1;
+      background: rgb(247, 133, 27);
+      border: none;
+    }
+  }
+}
